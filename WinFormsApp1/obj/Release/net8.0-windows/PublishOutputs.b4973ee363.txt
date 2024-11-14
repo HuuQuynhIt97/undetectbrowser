@@ -1,0 +1,9 @@
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WinFormsApp1.exe
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\selenium-manager\linux\selenium-manager
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\selenium-manager\macos\selenium-manager
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\selenium-manager\windows\selenium-manager.exe
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WinFormsApp1.dll
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WinFormsApp1.deps.json
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WinFormsApp1.runtimeconfig.json
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WinFormsApp1.pdb
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\WebDriver.dll

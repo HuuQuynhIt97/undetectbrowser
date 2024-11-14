@@ -1,0 +1,50 @@
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\Auto spam Pi by Leo.exe
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\Auto spam Pi by Leo.deps.json
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\Auto spam Pi by Leo.runtimeconfig.json
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\Auto spam Pi by Leo.dll
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\Auto spam Pi by Leo.pdb
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\WebDriver.dll
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.Properties.Resources.resources
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.Up2Date
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\Auto spam Pi by Leo.dll
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\refint\Auto spam Pi by Leo.dll
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\Auto spam Pi by Leo.pdb
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.genruntimeconfig.cache
+C:\Users\Administrator\Downloads\app\WinFormsApp1\WinFormsApp1\obj\Release\net8.0-windows\ref\Auto spam Pi by Leo.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\index.js
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\WebDriver.Support.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\UndetectedChromeDriver.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\WebDriver.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\WinFormsApp1.Form1.resources
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.Properties.Resources.resources
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.AssemblyInfo.cs
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.csproj.Up2Date
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\AutoSpam.genruntimeconfig.cache
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Auto click.exe
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Auto click.deps.json
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Auto click.runtimeconfig.json
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Auto click.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\bin\Release\net8.0-windows\Auto click.pdb
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\Auto click.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\refint\Auto click.dll
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\Auto click.pdb
+C:\Users\Administrator\Downloads\freebtc\WinFormsApp1\obj\Release\net8.0-windows\ref\Auto click.dll
