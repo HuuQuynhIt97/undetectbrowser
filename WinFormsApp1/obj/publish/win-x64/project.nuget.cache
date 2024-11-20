@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmm9XhI+lnY=",
+  "dgSpecHash": "l4qTf1cl56c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\AutoSpam.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\AutoSpam.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

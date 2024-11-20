@@ -87,7 +87,8 @@ namespace WinFormsApp1
         {
             while (isRunning)
             {
-                string userDataDir = @$"{textBox_chrome.Text}";
+                string userProfile = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+                string userDataDir = Path.Combine(userProfile, "AppData", "Local", "Google", "Chrome", "User Data");
                 string url = textBox_website.Text;
                 var profiles = GetAllProfiles(userDataDir);
 

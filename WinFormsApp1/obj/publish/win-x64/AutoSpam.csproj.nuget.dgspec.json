@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\AutoSpam.csproj": {}
+    "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\AutoSpam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\AutoSpam.csproj": {
+    "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\AutoSpam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\AutoSpam.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\AutoSpam.csproj",
         "projectName": "Auto click",
-        "projectPath": "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\AutoSpam.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\AutoSpam.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Downloads\\freebtc\\WinFormsApp1\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

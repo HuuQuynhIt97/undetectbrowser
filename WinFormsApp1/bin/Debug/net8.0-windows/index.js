@@ -11,7 +11,7 @@ const url = process.argv[4];
 test('Puppeteer Extra Plugin', async () => {
     const { page, browser } = await connect({
         args: [
-            "--window-size=900,900",
+            "--start-maximized",
             `--user-data-dir=${userDataDir}`, 
             `--profile-directory=${profileName}`, 
             '--disable-infobars', 
@@ -22,6 +22,12 @@ test('Puppeteer Extra Plugin', async () => {
         customConfig: {
             userDataDir: userDataDir
         },
+        // proxy:{
+        //     host:'46.149.135.73',
+        //     port: 63622,
+        //     username:'EAzGMRSu',
+        //     password:'ZiNQDnXh'
+        // },
         connectOption: {
             defaultViewport: null
         },
@@ -31,7 +37,7 @@ test('Puppeteer Extra Plugin', async () => {
     });
     
     await page.goto(url, { waitUntil: "domcontentloaded" });
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    await new Promise(resolve => setTimeout(resolve, 3000));
     const isLogin = await page.$('#signup_button');
     console.log('isLogin',isLogin);
     if (isLogin != null) {
@@ -39,6 +45,7 @@ test('Puppeteer Extra Plugin', async () => {
         await browser.close();
     } else {
         console.log('Đã đăng nhập, tiếp tục...');
+        await new Promise(resolve => setTimeout(resolve, 2000));
         await page.evaluate(async () => {
             for (let i = 0; i < document.body.scrollHeight; i += 100) {
                 window.scrollBy(0, 100);
@@ -46,7 +53,6 @@ test('Puppeteer Extra Plugin', async () => {
             }
         });
         await new Promise(resolve => setTimeout(resolve, 4000));
-    
         console.log('Đã hoàn tất cuộn trang và chờ 4 giây. Sẵn sàng để nhấn nút.');
         try {
             
@@ -57,7 +63,7 @@ test('Puppeteer Extra Plugin', async () => {
                 console.log('Nút Roll không tồn tại, đóng trình duyệt...');
             } else {
                 console.log('Nút Roll tồn tại, nhấn nút...');
-                await page.click('#free_play_form_button');
+                //await page.click('#free_play_form_button');
                 await new Promise(resolve => setTimeout(resolve, 4000));
             }
         } catch (error) {
