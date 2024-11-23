@@ -12,15 +12,20 @@ namespace WinFormsApp1
     {
         private ChromeDriver driver;
         private bool isRunning = false;
-
+        private System.Windows.Forms.Timer timerCountdown; // Timer đếm ngược
+        private int countdownTime; // Thời gian đếm ngược (tính bằng giây)
         public Form1()
         {
 
             InitializeComponent();
-
-
+            InitializeTimer();
         }
-
+        private void InitializeTimer()
+        {
+            timerCountdown = new System.Windows.Forms.Timer();
+            timerCountdown.Interval = 1000; // Mỗi giây
+            timerCountdown.Tick += TimerCountdown_Tick;
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -34,17 +39,13 @@ namespace WinFormsApp1
         private void button_attack_Click(object sender, EventArgs e)
         {
             isRunning = true;
-            //Thread thread = new Thread(Attack);
-            //thread.Start();
-            progressBar.Visible = true;  
-            progressBar.Style = ProgressBarStyle.Marquee; 
+            progressBar.Visible = true;
+            progressBar.Style = ProgressBarStyle.Marquee;
             button_attack.Enabled = false;
             button_stop.Enabled = true;
-            // Khởi tạo thread để thực hiện Attack
             Thread thread = new Thread(Attack);
-            thread.IsBackground = true;  // Đảm bảo thread là background để không chặn việc đóng ứng dụng
+            thread.IsBackground = true;  
             thread.Start();
-            MessageBox.Show("Tiến trình bắt đầu!");
         }
         public void OpenChromeWithProfile(string userDataDir, string profileName)
         {
@@ -115,20 +116,58 @@ namespace WinFormsApp1
                     }
                 }
 
-                // Lấy thời gian trì hoãn từ TextBox
                 int minutes = int.Parse(numeric_after.Text);  
-                int delayInMilliseconds = minutes * 60 * 1000; 
-
-                await Task.Delay(delayInMilliseconds);
+                int delayInMilliseconds = minutes * 60 * 1000;
+                countdownTime = minutes * 60; 
 
                 Invoke((MethodInvoker)(() =>
                 {
-                    progressBar.Visible = false; 
+                    lblCountdown.Text = TimeSpan.FromSeconds(countdownTime).ToString(@"mm\:ss");
+                    lblCountdown.Visible = true;
+                }));
+
+                timerCountdown.Start();
+
+                // Chờ đếm ngược hoàn tất
+                while (countdownTime > 0)
+                {
+                    await Task.Delay(100); 
+                }
+
+                Invoke((MethodInvoker)(() =>
+                {
+                    lblCountdown.Visible = false;
+                }));
+
+                // Chờ thêm thời gian trì hoãn nếu cần
+                await Task.Delay(delayInMilliseconds);
+
+                // Ẩn progress bar (nếu cần)
+                Invoke((MethodInvoker)(() =>
+                {
+                    progressBar.Visible = false;
                 }));
             }
         }
 
-
+        private void TimerCountdown_Tick(object sender, EventArgs e)
+        {
+            // Debug MessageBox để kiểm tra countdown
+            MessageBox.Show($"Countdown: {countdownTime}");
+            if (countdownTime > 0)
+            {
+                countdownTime--; // Giảm thời gian mỗi giây
+                // Cập nhật lại lblCountdown từ UI thread
+                Invoke((MethodInvoker)(() =>
+                {
+                    lblCountdown.Text = TimeSpan.FromSeconds(countdownTime).ToString(@"mm\:ss");
+                }));
+            }
+            else
+            {
+                timerCountdown.Stop(); // Dừng Timer nếu thời gian = 0
+            }
+        }
 
         private void button_stop_Click(object sender, EventArgs e)
         {

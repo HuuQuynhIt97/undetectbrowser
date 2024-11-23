@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Auto click")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac9412f6359d65fb6c587c2cec157eb2a7bf88c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3b5cacbb33c649eb4969ea2fed7874a7524014b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Auto click")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Auto click")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

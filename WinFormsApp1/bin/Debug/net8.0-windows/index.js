@@ -11,7 +11,7 @@ const url = process.argv[4];
 test('Puppeteer Extra Plugin', async () => {
     const { page, browser } = await connect({
         args: [
-            "--start-maximized",
+            "--window-size=900,900",
             `--user-data-dir=${userDataDir}`, 
             `--profile-directory=${profileName}`, 
             '--disable-infobars', 
@@ -63,8 +63,8 @@ test('Puppeteer Extra Plugin', async () => {
                 console.log('Nút Roll không tồn tại, đóng trình duyệt...');
             } else {
                 console.log('Nút Roll tồn tại, nhấn nút...');
-                //await page.click('#free_play_form_button');
-                await new Promise(resolve => setTimeout(resolve, 4000));
+                await page.click('#free_play_form_button');
+                await new Promise(resolve => setTimeout(resolve, 5000));
             }
         } catch (error) {
             console.log('Nút Roll không tồn tại, đóng trình duyệt...');

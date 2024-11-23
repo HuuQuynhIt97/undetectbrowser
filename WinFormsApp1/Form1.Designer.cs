@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             label_website = new Label();
@@ -39,6 +40,8 @@
             textBox_website = new TextBox();
             textBox_chrome = new TextBox();
             progressBar = new ProgressBar();
+            lblCountdown = new Label();
+            timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)numeric_after).BeginInit();
             SuspendLayout();
             // 
@@ -91,7 +94,7 @@
             // 
             button_attack.BackColor = Color.Lime;
             button_attack.Cursor = Cursors.Hand;
-            button_attack.Location = new Point(508, 199);
+            button_attack.Location = new Point(547, 203);
             button_attack.Name = "button_attack";
             button_attack.Size = new Size(75, 35);
             button_attack.TabIndex = 5;
@@ -103,7 +106,7 @@
             // 
             button_stop.BackColor = Color.Red;
             button_stop.Cursor = Cursors.Hand;
-            button_stop.Location = new Point(585, 199);
+            button_stop.Location = new Point(628, 203);
             button_stop.Name = "button_stop";
             button_stop.Size = new Size(75, 35);
             button_stop.TabIndex = 6;
@@ -113,7 +116,7 @@
             // 
             // numeric_after
             // 
-            numeric_after.Location = new Point(218, 207);
+            numeric_after.Location = new Point(218, 211);
             numeric_after.Name = "numeric_after";
             numeric_after.Size = new Size(160, 23);
             numeric_after.TabIndex = 8;
@@ -124,7 +127,7 @@
             textBox_website.Location = new Point(218, 75);
             textBox_website.Name = "textBox_website";
             textBox_website.ReadOnly = true;
-            textBox_website.Size = new Size(442, 23);
+            textBox_website.Size = new Size(482, 23);
             textBox_website.TabIndex = 9;
             textBox_website.Text = "https://freebitco.in/";
             // 
@@ -132,16 +135,30 @@
             // 
             textBox_chrome.Location = new Point(218, 142);
             textBox_chrome.Name = "textBox_chrome";
-            textBox_chrome.Size = new Size(442, 23);
+            textBox_chrome.Size = new Size(482, 23);
             textBox_chrome.TabIndex = 10;
             textBox_chrome.Text = "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\User Data";
             // 
             // progressBar
             // 
-            progressBar.Location = new Point(218, 259);
+            progressBar.Location = new Point(242, 373);
             progressBar.Name = "progressBar";
             progressBar.Size = new Size(442, 17);
             progressBar.TabIndex = 11;
+            // 
+            // lblCountdown
+            // 
+            lblCountdown.AutoSize = true;
+            lblCountdown.Location = new Point(408, 215);
+            lblCountdown.Name = "lblCountdown";
+            lblCountdown.Size = new Size(94, 15);
+            lblCountdown.TabIndex = 12;
+            lblCountdown.Text = "Thời gian còn lại";
+            // 
+            // timer
+            // 
+            timer.Enabled = true;
+            timer.Interval = 1000;
             // 
             // Form1
             // 
@@ -149,6 +166,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(820, 414);
+            Controls.Add(lblCountdown);
             Controls.Add(progressBar);
             Controls.Add(textBox_chrome);
             Controls.Add(textBox_website);
@@ -180,5 +198,7 @@
         private TextBox textBox_website;
         private TextBox textBox_chrome;
         private ProgressBar progressBar;
+        private Label lblCountdown;
+        private System.Windows.Forms.Timer timer;
     }
 }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|c:\\users\\administrator\\downloads\\undetectbrowser\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|c:\\users\\administrator\\downloads\\undetectbrowser\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|c:\\users\\administrator\\downloads\\undetectbrowser\\winformsapp1\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|solutionrelative:winformsapp1\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|C:\\Users\\Administrator\\Downloads\\undetectbrowser\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\index.js",
-              "RelativeDocumentMoniker": "WinFormsApp1\\index.js",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\index.js",
-              "RelativeToolTip": "WinFormsApp1\\index.js",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-20T02:36:05.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
-              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAuwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:33:11.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs [Design]",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:32:59.265Z",
+              "WhenOpened": "2024-11-23T08:23:16.293Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T02:33:11.129Z"
             }
           ]
         }
