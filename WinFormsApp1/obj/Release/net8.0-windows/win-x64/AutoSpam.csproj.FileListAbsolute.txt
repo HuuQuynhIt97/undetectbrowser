@@ -9197,3 +9197,4 @@ C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Release\net8.0
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Release\net8.0-windows\win-x64\Auto click.pdb
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Release\net8.0-windows\win-x64\AutoSpam.genruntimeconfig.cache
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Release\net8.0-windows\win-x64\ref\Auto click.dll
+C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\bin\Release\net8.0-windows\win-x64\Auto click.dll.config

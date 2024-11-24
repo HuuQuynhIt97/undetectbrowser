@@ -7750,6 +7750,7 @@ C:\Users\Administrator\Downloads\build\node_modules\zod\README.md
 C:\Users\Administrator\Downloads\build\Auto click.dll
 C:\Users\Administrator\Downloads\build\Auto click.deps.json
 C:\Users\Administrator\Downloads\build\Auto click.runtimeconfig.json
+C:\Users\Administrator\Downloads\build\Auto click.dll.config
 C:\Users\Administrator\Downloads\build\Auto click.pdb
 C:\Users\Administrator\Downloads\build\Microsoft.CSharp.dll
 C:\Users\Administrator\Downloads\build\Microsoft.VisualBasic.Core.dll

@@ -94,7 +94,7 @@
             // 
             button_attack.BackColor = Color.Lime;
             button_attack.Cursor = Cursors.Hand;
-            button_attack.Location = new Point(547, 203);
+            button_attack.Location = new Point(547, 205);
             button_attack.Name = "button_attack";
             button_attack.Size = new Size(75, 35);
             button_attack.TabIndex = 5;
@@ -106,7 +106,7 @@
             // 
             button_stop.BackColor = Color.Red;
             button_stop.Cursor = Cursors.Hand;
-            button_stop.Location = new Point(628, 203);
+            button_stop.Location = new Point(628, 205);
             button_stop.Name = "button_stop";
             button_stop.Size = new Size(75, 35);
             button_stop.TabIndex = 6;
@@ -151,9 +151,8 @@
             lblCountdown.AutoSize = true;
             lblCountdown.Location = new Point(408, 215);
             lblCountdown.Name = "lblCountdown";
-            lblCountdown.Size = new Size(94, 15);
+            lblCountdown.Size = new Size(0, 15);
             lblCountdown.TabIndex = 12;
-            lblCountdown.Text = "Thời gian còn lại";
             // 
             // timer
             // 

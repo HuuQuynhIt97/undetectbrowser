@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|c:\\users\\administrator\\downloads\\undetectbrowser\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|C:\\Users\\Administrator\\Downloads\\undetectbrowser\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{36DC77E8-FEEA-40E5-BF07-5B89C5B48A3E}|WinFormsApp1\\AutoSpam.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -40,9 +40,10 @@
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\Administrator\\Downloads\\undetectbrowser\\WinFormsApp1\\Form1.cs",
               "RelativeToolTip": "WinFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwEMAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T02:33:11.129Z"
+              "WhenOpened": "2024-11-20T02:33:11.129Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -7,11 +7,15 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Auto click</AssemblyName>
-    <ApplicationIcon>chase_badge_canine_patrol_paw_patrol_icon_263831.ico</ApplicationIcon>
+    <ApplicationIcon>btc.ico</ApplicationIcon>
   </PropertyGroup>
 <ItemGroup>
   <None Update="index.js">
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+  </None>
+  <None Update="Properties\Settings.settings">
+    <Generator>SettingsSingleFileGenerator</Generator>
+    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
   </None>
 </ItemGroup>
 <ItemGroup>
@@ -20,7 +24,7 @@
   </None>
 </ItemGroup>
   <ItemGroup>
-    <Content Include="chase_badge_canine_patrol_paw_patrol_icon_263831.ico" />
+    <Content Include="btc.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +40,11 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 

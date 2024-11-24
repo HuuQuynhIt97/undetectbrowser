@@ -7860,3 +7860,4 @@ C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Debug\net8.0-w
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Debug\net8.0-windows\Auto click.pdb
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Debug\net8.0-windows\AutoSpam.genruntimeconfig.cache
 C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\obj\Debug\net8.0-windows\ref\Auto click.dll
+C:\Users\Administrator\Downloads\undetectbrowser\WinFormsApp1\bin\Debug\net8.0-windows\Auto click.dll.config

@@ -1,11 +1,11 @@
 ﻿using Microsoft.Win32;
+using Newtonsoft.Json;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumUndetectedChromeDriver;
 using System.Diagnostics;
 using System.Security.Policy;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -14,18 +14,45 @@ namespace WinFormsApp1
         private bool isRunning = false;
         private System.Windows.Forms.Timer timerCountdown; // Timer đếm ngược
         private int countdownTime; // Thời gian đếm ngược (tính bằng giây)
+
+        private System.Windows.Forms.Timer countdownTimer; // Timer để đếm ngược
+        private int remainingTimeInSeconds; // Thời gian còn lại (tính bằng giây)
         public Form1()
         {
-
             InitializeComponent();
+            numeric_after.Text = LoadSettings().ToString();
             InitializeTimer();
         }
         private void InitializeTimer()
         {
-            timerCountdown = new System.Windows.Forms.Timer();
-            timerCountdown.Interval = 1000; // Mỗi giây
-            timerCountdown.Tick += TimerCountdown_Tick;
+            countdownTimer = new System.Windows.Forms.Timer();
+            countdownTimer.Interval = 1000; 
+            countdownTimer.Tick += CountdownTimer_Tick; 
         }
+        // Sự kiện khi Timer chạy
+        private void CountdownTimer_Tick(object sender, EventArgs e)
+        {
+            if (remainingTimeInSeconds > 0)
+            {
+                remainingTimeInSeconds--; // Giảm thời gian
+                UpdateTimeDisplay(); // Cập nhật giao diện hiển thị
+            }
+            else
+            {
+                countdownTimer.Stop(); // Dừng Timer khi hết thời gian
+                MessageBox.Show("Hết thời gian!");
+            }
+        }
+        private void UpdateTimeDisplay()
+        {
+            int minutes = remainingTimeInSeconds / 60;
+            int seconds = remainingTimeInSeconds % 60;
+            lblCountdown.Text = $"{minutes:D2}:{seconds:D2}"; // Hiển thị dạng MM:SS
+            lblCountdown.Font = new Font("Arial", 12, FontStyle.Bold); // Font lớn và đậm
+            lblCountdown.TextAlign = ContentAlignment.MiddleCenter;  // Căn giữa nội dung
+            lblCountdown.ForeColor = Color.DarkGreen; // Màu chữ (xanh đậm)
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -38,14 +65,37 @@ namespace WinFormsApp1
 
         private void button_attack_Click(object sender, EventArgs e)
         {
+            if (int.TryParse(numeric_after.Text, out int minutes))
+            {
+                lblCountdown.Visible = true;
+                remainingTimeInSeconds = minutes * 60;
+                UpdateTimeDisplay();
+                countdownTimer.Start(); 
+            }
             isRunning = true;
             progressBar.Visible = true;
             progressBar.Style = ProgressBarStyle.Marquee;
             button_attack.Enabled = false;
             button_stop.Enabled = true;
+            int timeInterval = int.Parse(numeric_after.Text);
+            SaveSettings(timeInterval);
             Thread thread = new Thread(Attack);
             thread.IsBackground = true;  
             thread.Start();
+        }
+        private int LoadSettings()
+        {
+            if (File.Exists("settings.json"))
+            {
+                var settings = JsonConvert.DeserializeObject<dynamic>(File.ReadAllText("settings.json"));
+                return (int)settings.IntervalTime;
+            }
+            return 60; // Giá trị mặc định nếu không tìm thấy file
+        }
+        private void SaveSettings(int intervalTime)
+        {
+            var settings = new { IntervalTime = intervalTime };
+            File.WriteAllText("settings.json", JsonConvert.SerializeObject(settings));
         }
         public void OpenChromeWithProfile(string userDataDir, string profileName)
         {
@@ -118,26 +168,31 @@ namespace WinFormsApp1
 
                 int minutes = int.Parse(numeric_after.Text);  
                 int delayInMilliseconds = minutes * 60 * 1000;
-                countdownTime = minutes * 60; 
 
-                Invoke((MethodInvoker)(() =>
-                {
-                    lblCountdown.Text = TimeSpan.FromSeconds(countdownTime).ToString(@"mm\:ss");
-                    lblCountdown.Visible = true;
-                }));
+                remainingTimeInSeconds = minutes * 60; 
+                UpdateTimeDisplay();
+                countdownTimer.Start(); 
 
-                timerCountdown.Start();
+                //countdownTime = minutes * 60; 
 
-                // Chờ đếm ngược hoàn tất
-                while (countdownTime > 0)
-                {
-                    await Task.Delay(100); 
-                }
+                //Invoke((MethodInvoker)(() =>
+                //{
+                //    lblCountdown.Text = TimeSpan.FromSeconds(countdownTime).ToString(@"mm\:ss");
+                //    lblCountdown.Visible = true;
+                //}));
 
-                Invoke((MethodInvoker)(() =>
-                {
-                    lblCountdown.Visible = false;
-                }));
+                //timerCountdown.Start();
+
+                //// Chờ đếm ngược hoàn tất
+                //while (countdownTime > 0)
+                //{
+                //    await Task.Delay(100); 
+                //}
+
+                //Invoke((MethodInvoker)(() =>
+                //{
+                //    lblCountdown.Visible = false;
+                //}));
 
                 // Chờ thêm thời gian trì hoãn nếu cần
                 await Task.Delay(delayInMilliseconds);
@@ -171,7 +226,9 @@ namespace WinFormsApp1
 
         private void button_stop_Click(object sender, EventArgs e)
         {
-            isRunning = false;  
+            isRunning = false;
+            countdownTimer.Stop(); // Dừng Timer
+            lblCountdown.Visible = false;
             progressBar.Visible = false;
             button_attack.Enabled = true;
             MessageBox.Show("Tiến trình đã dừng!");
